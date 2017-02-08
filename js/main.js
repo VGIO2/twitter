@@ -17,7 +17,7 @@ function crearElementos(){
     var lista= document.getElementById("lista");
     lista.innerHTML="";
     for (var i in tareas){
-        var html= "<li class='tarea'><input onclick='onChecked("+i+")' class='check' type='checkbox' "+(tareas[i].check?"checked":"")+">"+"<span "+(tareas[i].check?"style='text-decoration:line-through'":"style='text-decoration:none'")+" id='new'>"+tareas[i].texto+"</span><i onclick='eliminarSpan("+i+")' class='glyphicon glyphicon-trash tacho'></i></li>";
+        var html= "<li class='tarea'><input onclick='onChecked("+i+")' class='check' type='checkbox' "+(tareas[i].check?"checked":"")+">"+"<span "+(tareas[i].check?"style='text-decoration:line-through'":"style='text-decoration:none'")+" id='new'>"+tareas[i].texto+"</span><i onclick='eliminarSpan("+i+")' class='glyphicon glyphicon-trash pull-right'></i></li>";
         
         lista.innerHTML+=html;
     }
